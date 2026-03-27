@@ -22,3 +22,11 @@ body {
   display: block;
   margin-top: 10px;
 }
+
+h3 {
+  padding-top: 2rem;
+}
+
+td {
+  padding-right: 1rem;
+}
