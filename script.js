@@ -96,13 +96,20 @@ let elementString = ingrediantElement.join('') //gjør det om til string
   mealInfo.innerHTML = `
   <div>
     <h2>${data.strMeal} </h2>
-    <img src = '${data.strMealThumb}'>
+    <div class = 'part1'>
+      <div>
+        <img src = '${data.strMealThumb}'>
+      </div>
+      <div>
+        <h3>Ingredients:</h3>
+        <table><tbody>${elementString}</tbody></table>
+      </div>
+    </div>
     <h3>Category:</h3>
     <p>${data.strCategory}</p>
     <h3>Instructions:</h3>
     <p>${data.strInstructions}</p>
-    <h3>Ingredients:</h3>
-    <table><tbody>${elementString}</tbody></table>
+    
   </div>
   `
 }
