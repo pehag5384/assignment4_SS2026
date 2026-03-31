@@ -125,7 +125,7 @@ If no cocktails found, fetch random
 
 //Svar Martin
 async function fetchCocktailByDrinkIngredient(drinkIngredient) {
-    let url = "https://www.thecocktaildb.com/api/json/v1/1/search.php?s=" 
+    let url = "https://www.thecocktaildb.com/api/json/v1/1/search.php?i=" 
             + encodeURIComponent(drinkIngredient);
 
   let response = await fetch(url);
